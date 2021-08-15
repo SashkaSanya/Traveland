@@ -1,0 +1,283 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+	padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* сброс стилей кнопок */
+button {
+	padding: 0;
+	border: none;
+	font: inherit;
+	color: inherit;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+header {
+	background-image: url(../img/intro_bg.png);
+	background-size: 100%;
+	height: 900px;
+}
+
+.header {
+	display: flex;
+	padding-top: 35px;
+	margin-bottom: 200px;
+}
+.header__logo {
+	margin-top: auto;
+	margin-bottom: auto;
+
+	font-family: Ribeye;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 150%;
+	letter-spacing: 0.06em;
+	color: #ffffff;
+	margin-left: 14.3%;
+	margin-right: auto;
+}
+.header__nav {
+	display: flex;
+}
+.header__link {
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-right: 50px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 150%;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.header__link:hover {
+	text-decoration: underline;
+}
+
+.header__button {
+	width: 163px;
+	height: 51px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 51px;
+	text-align: center;
+	color: #ffffff;
+
+	margin-left: auto;
+	margin-right: 14.3%;
+
+	background: #c9453b;
+	border-radius: 5px;
+}
+
+.intro {
+}
+.intro__title {
+	margin-left: 13.6%;
+	margin-bottom: 30px;
+	width: 804px;
+
+	font-family: Gelasio;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 65px;
+	line-height: 120%;
+
+	color: #ffffff;
+}
+.intro__text {
+	width: 458px;
+	margin-left: 14.3%;
+	margin-bottom: 40px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 160%;
+
+	color: #ffffff;
+
+	opacity: 0.6;
+}
+.intro__button {
+	width: 187px;
+	height: 59px;
+	margin-left: 14.3%;
+
+	background: #c9453b;
+	border-radius: 5px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 150%;
+
+	color: #ffffff;
+}
+
+.popular {
+	margin-bottom: 140px;
+}
+.popular__title {
+	margin-top: 140px;
+	margin-bottom: 20px;
+
+	font-family: Gelasio;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 43px;
+	line-height: 140%;
+
+	color: #000000;
+
+	text-align: center;
+}
+.popular__subtitle {
+	width: 735px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 160%;
+
+	color: #000000;
+
+	opacity: 0.6;
+
+	text-align: center;
+}
+
+.popular__places {
+	width: 71.2%;
+	margin: 0 auto;
+
+	display: flex;
+	justify-content: space-between;
+}
+.popular__place {
+	display: flex;
+	flex-direction: column;
+
+	width: 360px;
+
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+}
+
+.popular__place.active {
+	box-shadow: 0px 6px 35px rgba(0, 0, 0, 0.08);
+}
+
+.popular__img {
+	margin-bottom: 35px;
+}
+.popular__city {
+	margin-bottom: 10px;
+
+	font-family: Gelasio;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 150%;
+
+	text-align: center;
+
+	color: #000000;
+}
+.popular__description {
+	margin-bottom: 33px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 160%;
+
+	text-align: center;
+
+	color: #000000;
+
+	opacity: 0.6;
+}
+
+.special {
+}
+
+.special__title {
+	width: 278px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+
+	font-family: Gelasio;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 43px;
+	line-height: 140%;
+
+	color: #000000;
+}
+
+.special__subtitle {
+	width: 658px;
+	margin: 0 auto;
+	margin-bottom: 60px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 160%;
+
+	color: #000000;
+
+	opacity: 0.6;
+
+	text-align: center;
+}
